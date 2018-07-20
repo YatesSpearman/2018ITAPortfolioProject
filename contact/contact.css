@@ -1,0 +1,34 @@
+.header h1 {
+    width: 100vw;
+    text-align: center;
+    display: block;
+    font-size: 2rem;
+    
+}
+
+.contact-form__container {
+    width: 80%;
+    height: 200px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 8px;
+    margin: auto;
+    margin-bottom: 30px;
+    
+}
+
+.row {
+    display: block;
+    padding: 4px;
+    margin: 2px;
+}
+
+.submit {
+    display: block;
+    width: 20%;
+    margin: auto;
+}
+
+.response {
+    float: right;
+    margin: 2px;
+}
