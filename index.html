@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Yates Spearman | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Glegoo|Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="shared.css">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <link rel="stylesheet" type="text/css" media="screen" href="queries.css">
 </head>
 <body>
+    <a href="#main" class="skip-link">Skip to main content</a>
     <nav class="main-nav">
         <ul class="main-nav__list">
             <li class="home--button active"><a href="index.html">Home</a></li>
@@ -22,13 +23,13 @@
     </nav>
         <section class="banner">
             
-                <h1>Yates Spearman</h1>
+                <h1 id="main" tabindex="0">Yates Spearman</h1>
             
         </section>
 
         <section>
             <div class="transition">
-                <p>&mdash; Welcome To My Portfolio Website &mdash;</p>
+                <p tabindex="0">&mdash; Welcome To My Portfolio Website &mdash;</p>
             </div>
         </section>
 
@@ -37,33 +38,33 @@
         
             <div class="display">
 
-                <a href="biography/biography.html">
+                <a href="biography/biography.html" class="bioLink">
                     <div class="display--container biography">
-                        <div class="display-title--container">
+                        <div class="display-title--container bioText">
                             <p>Biography</p>
                         </div>
                     </div>
                 </a>
 
-                <a href="resume/resume.html">
+                <a href="resume/resume.html" class="resLink">
                     <div class="display--container resume">
-                        <div class="display-title--container">
+                        <div class="display-title--container resText">
                             <p>Resume</p>                        
                         </div>
                     </div>
                 </a>
 
-                <a href="gallery/gallery.html">
+                <a href="gallery/gallery.html" class="galLink">
                     <div class="display--container gallery">
-                        <div class="display-title--container">
+                        <div class="display-title--container galText">
                             <p>Gallery</p>                        
                         </div>
                     </div>
                 </a>
 
-                <a href="contact/contact.html">
+                <a href="contact/contact.html" class="contLink">
                     <div class="display--container contact">
-                        <div class="display-title--container">
+                        <div class="display-title--container contText">
                             <p>Contact</p>                        
                         </div>
                     </div>
@@ -80,5 +81,7 @@
             </div>
 
         </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../queries.css">
 </head>
 <body>
+    <a href="#main" class="skip-link">Skip to main content</a>
     <nav class="main-nav">
         <ul class="main-nav__list">
             <li class="home--button"><a href="../index.html">Home</a></li>
@@ -23,36 +24,37 @@
     <br>
 
     <section class="header">
-        <h1>Contact</h1>
+        <h1 tabindex="0" id="main">Contact</h1>
     </section>
 
     <section class="form-container">
         <div class="contact-form__container">
             <form method="post" action="#" class="contact-form">
+                <legend>Please Submit Your Contact Information</legend>
 
                 <div class="row">
-                    <label for="name">Name</label>
+                    <label for="name" tabindex="0">Name</label>
                     <div class="response">
-                        <input type="text" name="name" id="name" placeholder="Your Name Here">
+                        <input type="text" name="name" id="name" placeholder="Your Name Here" required>
                     </div>
                 </div>
 
                 <div class="row">
-                    <label for="email">Email</label>
+                    <label for="email" tabindex="0">Email</label>
                     <div class="response">
-                        <input type="email" name="email" id="email" placeholder="Email Address">
+                        <input type="email" name="email" id="email" placeholder="Email Address" required>
                     </div>
                 </div>
 
                 <div class="row">
-                    <label for="phone-number">Phone Number</label>
+                    <label for="phone-number" tabindex="0">Phone Number</label>
                     <div class="response">
-                        <input type="tel" name="phone-number" id="phone-number" placeholder="Phone Number">
+                        <input type="tel" name="phone-number" id="phone-number" placeholder="Phone Number" minlength="7" maxlength="10" required>
                     </div>
                 </div>
 
                 <div class="row">
-                    <label for="company">Company Name</label>
+                    <label for="company" tabindex="0">Company Name</label>
                     <div class="response">
                         <input type="text" name="company" id="company" placeholder="Company Name">
                     </div>    
@@ -60,7 +62,7 @@
 
 
                 <div class="row comments">
-                    <label for="comments">Comments or Questions</label>
+                    <label for="comments" tabindex="0">Comments or Questions</label>
                     <div class="response">
                         <textarea name="comments" id="comments" placeholder="Post Any Comments or Questions Here"></textarea>
                     </div>
@@ -85,5 +87,7 @@
 
     </footer>
 </body>
-<script src="../script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../jquery.validate.min.js"></script>
+<script src="../contact.js"></script>
 </html>
