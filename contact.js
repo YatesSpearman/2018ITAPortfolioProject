@@ -1,6 +1,5 @@
-
 /* Contact Page 
-
+ ORIGINAL CONTACT VALIDATION LOGIC
 
 
 var firstName, email, phoneNumber, submit;
@@ -43,35 +42,6 @@ document.getElementById('submit').addEventListener('click', inputChecker);
 */
 
 
+/* IMPROVED jquery.validate logic */
 
-
-$('.bioLink').on('mouseenter', function() {
-    $('.bioText').css("opacity", "0.5");
-});
-
-$('.bioLink').on('mouseleave', function() {
-    $('.bioText').css("opacity", "1");
-});
-
-$('.resLink').on('mouseenter', function() {
-    $('.resText').css("opacity", "0.5");
-});
-
-$('.resLink').on('mouseleave', function() {
-    $('.resText').css("opacity", "1");
-});
-
-$('.galLink').on('mouseenter', function() {
-    $('.galText').css("opacity", "0.5");
-});
-
-$('.galLink').on('mouseleave', function() {
-    $('.galText').css("opacity", "1");
-});
-$('.contLink').on('mouseenter', function() {
-    $('.contText').css("opacity", "0.5");
-});
-
-$('.contLink').on('mouseleave', function() {
-    $('.contText').css("opacity", "1");
-});
+$('.contact-form').validate();
